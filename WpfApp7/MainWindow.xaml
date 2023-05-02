@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Go_In" Content="Войти в чат" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Width="800" Height="62" Click="Go_In_Click"/>
+        <Button x:Name="Create_chat" Content="Создать чат" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="62" Width="800" Click="Create_chat_Click"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Мессенджер" VerticalAlignment="Center" Width="76"/>
+        <TextBox x:Name="Nickname" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="800" Height="39"/>
+        <TextBox x:Name="IPADress" HorizontalAlignment="Center" Grid.Row="6" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="800" Height="36" Margin="0,26,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,46,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="6" TextWrapping="Wrap" Text="IP adress" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
